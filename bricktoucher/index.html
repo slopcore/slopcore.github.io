@@ -390,6 +390,10 @@
           <summary>How do I change or remove my leaderboard entry?</summary>
           <p>In the app, open LEADERBOARD → WORLD: you can rename yourself there, or tap <em>Delete my account</em> to remove your entry and scores. You can also <a href="delete-account/">ask us by email</a>.</p>
         </details>
+        <details id="report">
+          <summary>How do I report an offensive leaderboard name?</summary>
+          <p>Names go through a profanity filter before they're accepted, but if one gets past it, email <a href="mailto:apps@slopcore.io?subject=BrickToucher%20report%20a%20name">apps@slopcore.io</a> with the name and the board it's on (ARCADE or SURVIVAL). We'll review it and remove the name, or the account behind it, within 24 hours.</p>
+        </details>
         <details>
           <summary>What data does BrickToucher collect?</summary>
           <p>Nothing unless you sign in to the leaderboard, and then only what it needs. No ads, analytics or tracking. See the <a href="privacy/">privacy policy</a>.</p>
@@ -410,5 +414,10 @@
       <a href="/">SLOPCORE.IO</a>
     </div>
   </footer>
+  <script>
+    // Open the FAQ entry a link points at (e.g. #report).
+    const open = () => { const d = document.getElementById(location.hash.slice(1)); if (d?.tagName === 'DETAILS') d.open = true; };
+    open(); addEventListener('hashchange', open);
+  </script>
 </body>
 </html>
