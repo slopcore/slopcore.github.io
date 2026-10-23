@@ -6,6 +6,7 @@
   <title>BrickToucher — neon block puzzle for iPhone & Android</title>
   <meta name="description" content="BrickToucher is a touch-first block puzzle: clear lines, build same-colour squares for the beat-synced sweep, and chain combos to procedurally generated music.">
   <meta name="theme-color" content="#07030f">
+  <meta name="apple-itunes-app" content="app-id=6816843681">
   <link rel="icon" href="icon.png" type="image/png">
   <link rel="apple-touch-icon" href="icon.png">
   <meta property="og:title" content="BrickToucher">
@@ -156,6 +157,8 @@
       text-shadow: 0 0 8px var(--cyan);
       box-shadow: 0 0 14px rgba(33, 240, 255, 0.3), inset 0 0 12px rgba(33, 240, 255, 0.12);
     }
+    .chip:hover { background: rgba(33, 240, 255, 0.16); }
+    .chip.pink:hover { background: rgba(255, 43, 214, 0.16); }
     .chip.pink {
       border-color: rgba(255, 43, 214, 0.7); text-shadow: 0 0 8px var(--pink);
       box-shadow: 0 0 14px rgba(255, 43, 214, 0.3), inset 0 0 12px rgba(255, 43, 214, 0.12);
@@ -302,8 +305,8 @@
 
     <p class="pitch">A neon block puzzle you play with one thumb, set to music that builds as you level up.</p>
     <div class="platforms">
-      <span class="chip">IPHONE</span>
-      <span class="chip pink">ANDROID</span>
+      <a class="chip" href="https://apps.apple.com/app/id6816843681">APP STORE</a>
+      <a class="chip pink" href="https://play.google.com/store/apps/details?id=io.slopcore.bricktoucher">GOOGLE PLAY</a>
       <a class="chip" href="#support">SUPPORT</a>
     </div>
   </header>
